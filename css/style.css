@@ -1,0 +1,990 @@
+/* Demo styles */
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* 如果需要导航按钮*/
+.swiper-button-next{
+    position: absolute;
+    width: 17%;
+    height: 3%;
+    bottom: 3%;
+    left: 42%;
+    top: auto;
+    background: url(../img/up.png);
+    animation: btn 2s infinite linear;
+}
+@keyframes btn {
+    from{
+        bottom: 1%;
+        opacity: 0;
+    }
+    to{
+        bottom: 3%;
+        opacity: 1;
+    }
+}
+/*音乐开始*/
+#music{
+    width:30px;
+    height: 30px;
+    position: fixed;
+    right: 1%;
+    top:1%;
+    z-index: 1;
+
+}
+#music #imgmc{
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    animation: zhuan 1s infinite linear;
+    width: 35px;
+
+}
+@keyframes zhuan {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*音乐结束*/
+
+/*第一屏开始*/
+/*背景开始*/
+.swiper-slide.one{
+    background: url("../img/backgrand.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.one .flower-one{
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.swiper-slide.one .flower-two{
+    width: 26%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.swiper-slide.one .flower-there{
+    width: 12%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+.swiper-slide.one .flower-four{
+    width: 10%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+.swiper-slide.one .flower-five{
+    width: 64%;
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+
+}
+.swiper-slide.one .flower-six{
+    width: 16%;
+    position: absolute;
+    left: -5%;
+    top: 63%;
+}
+.swiper-slide.one .flower-seven{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    top: 44%;
+    width: 27%;
+}
+.swiper-slide.one .flower-eight{
+    width: 14%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+
+    
+}
+.swiper-slide.one .flower-nine{
+    position: absolute;
+    left: 0%;
+    top: 21%;
+    width: 10%;
+}
+.swiper-slide.one .flower-ten{
+    position: absolute;
+    top: -2%;
+    left: -4%;
+    width: 12%;
+    transform: rotate(-90deg);
+
+}
+.swiper-slide.one .flower-eleven{
+    position: absolute;
+    top: -1%;
+    width: 33%;
+    right: 20%;
+}
+.swiper-slide.one .flower-twelve{
+    position: absolute;
+    right: -8%;
+    width: 20%;
+    top: 69%;
+    transform: rotate(180deg);
+}
+.swiper-slide.one .flower-thirteen{
+    position: absolute;
+    top: 12%;
+    width: 17%;
+    left: 43%;
+}
+.swiper-slide.one .flower-fourteen{
+    position: absolute;
+    top: 76%;
+    width: 16%;
+    left: 43%;
+}
+/*背景结束*/
+.first-top{
+    width: 70%;
+    height: 20%;
+    position: absolute;
+    top: 31%;
+    left: 15%;
+}
+
+.first-top .screen-o1{
+    top: 15%;
+    position: absolute;
+    width: 33%;
+    left: 0%;
+}
+.first-top .screen-o2{
+    top: 15%;
+    position: absolute;
+    width: 33%;
+    left: 33%;
+
+}
+.first-top .screen-o3{
+    top: 15%;
+    position: absolute;
+    width: 33%;
+     right: 1%;
+}
+
+.first-top .screen-t{
+    position: absolute;
+    width: 24%;
+    left: 5%;
+    top: 26%;
+}
+.first-top .screen-h{
+    position: absolute;
+    width: 24%;
+    left: 38%;
+    top: 26%;
+}
+.first-top .screen-f{
+    position: absolute;
+    width: 21%;
+    right: 7%;
+    top: 26%;
+}
+.first-top .screen-zq{
+    position: absolute;
+    top: 17%;
+    left: 23%;
+    width: 8%;
+}
+.first-top .screen-xq{
+    position: absolute;
+    top: 17%;
+    right: 4%;
+    width: 8%;
+}
+.first-top .screen-nan{
+    position: absolute;
+    top: 9%;
+    right: 30%;
+    width: 18%;
+}
+.first-top .screen-xiao{
+    position: absolute;
+    top: 32%;
+    right: 45%;
+    width: 29%;
+}
+.first-top .screen-ye{
+    position: absolute;
+    top: 9%;
+    right: -30%;
+    width: 29%;
+}
+
+
+
+.first-bottom{
+    width: 70%;
+    height: 14%;
+    position: relative;
+    top: 16%;
+   color: #4984a2;
+}
+
+.first-bottom .bottom-t{
+    font-size: 4vw;
+    line-height: 21px;
+}
+.first-bottom .bottom-h{
+    font-size: 3vw;
+    line-height: 0px;
+}
+.first-midden{
+    width: 70%;
+    height: 3%;
+    position: absolute;
+    top: 88%;
+    right: 14%;
+    font-size: 5vw;
+    color: #4984a2;
+}
+
+/*第一屏结束*/
+/*第二屏开始*/
+/*背景开始*/
+.swiper-slide.two{
+    background: url("../img/backgrand.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.two .flower-one{
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.swiper-slide.two .flower-two{
+    width: 26%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.swiper-slide.two .flower-there{
+    width: 12%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+.swiper-slide.two .flower-four{
+    width: 10%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+.swiper-slide.two .flower-five{
+    width: 64%;
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+
+}
+.swiper-slide.two .flower-six{
+    width: 16%;
+    position: absolute;
+    left: -5%;
+    top: 63%;
+}
+.swiper-slide.two .flower-seven{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    top: 44%;
+    width: 27%;
+}
+.swiper-slide.two .flower-eight{
+    width: 14%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+
+
+}
+.swiper-slide.two .flower-nine{
+    position: absolute;
+    left: 0%;
+    top: 21%;
+    width: 10%;
+}
+.swiper-slide.two .flower-ten{
+    position: absolute;
+    top: -2%;
+    left: -4%;
+    width: 12%;
+    transform: rotate(-90deg);
+
+}
+.swiper-slide.two .flower-eleven{
+    position: absolute;
+    top: -1%;
+    width: 33%;
+    right: 20%;
+}
+.swiper-slide.two .flower-twelve{
+    position: absolute;
+    right: -8%;
+    width: 20%;
+    top: 69%;
+    transform: rotate(180deg);
+}
+/*背景结束*/
+.chapter-top{
+    width: 70%;
+    height: 8%;
+    position: absolute;
+    top: 7%;
+    left: 14%;
+}
+.chapter-line{
+    border: 1px solid #4984a2;
+    position: absolute;
+    top: 14%;
+    width: 70%;
+    left: 15%;
+}
+.chapter-top .chapter-t{
+    font-size: 5vw;
+    margin: 0;
+    color: #4984a2;
+}
+
+.chapter-content{
+    width: 40%;
+    height: 3%;
+    position: absolute;
+    top: 21%;
+    left: 10%;
+    font-size: 4vw;
+    color: #4984a2;
+}
+.chapter-main{
+    width: 70%;
+    height: 55%;
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    overflow: hidden;
+}
+.chapter-main p{
+    font-size: 4vw;
+    text-indent: 2em;
+    line-height: 169%;
+    color: #4984a2;
+}
+.chapter-conter{
+    width: 40%;
+    height: 3%;
+    position: absolute;
+    top: 83%;
+    font-size: 4vw;
+    color: #4984a2;
+    left: 30%;
+}
+.chapter-bottom{
+    width: 40%;
+    height: 3%;
+    position: absolute;
+    top: 88%;
+    font-size: 4vw;
+    color: #4984a2;
+    left: 30%;
+}
+
+
+
+
+/*第二屏结束*/
+
+/*第三屏开始*/
+/*背景开始*/
+.swiper-slide.there{
+    background: url("../img/backgrand.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.there .flower-one{
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.swiper-slide.there .flower-two{
+    width: 26%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.swiper-slide.there .flower-there{
+    width: 12%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+.swiper-slide.there .flower-four{
+    width: 10%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+.swiper-slide.there .flower-five{
+    width: 64%;
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+
+}
+.swiper-slide.there .flower-six{
+    width: 16%;
+    position: absolute;
+    left: -5%;
+    top: 63%;
+}
+.swiper-slide.there .flower-seven{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    top: 44%;
+    width: 27%;
+}
+.swiper-slide.there .flower-eight{
+    width: 14%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+
+
+}
+.swiper-slide.there .flower-nine{
+    position: absolute;
+    left: 0%;
+    top: 21%;
+    width: 10%;
+}
+.swiper-slide.there .flower-ten{
+    position: absolute;
+    top: -2%;
+    left: -4%;
+    width: 12%;
+    transform: rotate(-90deg);
+
+}
+.swiper-slide.there .flower-eleven{
+    position: absolute;
+    top: -1%;
+    width: 33%;
+    right: 20%;
+}
+.swiper-slide.there .flower-twelve{
+    position: absolute;
+    right: -8%;
+    width: 20%;
+    top: 69%;
+    transform: rotate(180deg);
+}
+/*背景结束*/
+.swiper-slide.there .page{
+    width: 70%;
+    height: 5%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+
+}
+.swiper-slide.there .page-one{
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    color: #4984a2;
+}
+
+.swiper-slide.there .page-line{
+    border: 1px solid #4984a2;
+    position: absolute;
+    top: 16%;
+    width: 70%;
+    left: 15%;
+}
+
+
+.page .center{
+    width: 65%;
+    height: 30%;
+    border: 8px solid #4984a2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.page .bottom{
+    width: 40%;
+    height: 25%;
+    border: 8px solid #4984a2;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+/*第三屏结束*/
+/*第四屏开始*/
+/*背景开始*/
+.swiper-slide.four{
+    background: url("../img/backgrand.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.four .flower-one{
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.swiper-slide.four .flower-two{
+    width: 26%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.swiper-slide.four .flower-there{
+    width: 12%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+.swiper-slide.four .flower-four{
+    width: 10%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+.swiper-slide.four .flower-five{
+    width: 64%;
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+
+}
+.swiper-slide.four .flower-six{
+    width: 16%;
+    position: absolute;
+    left: -5%;
+    top: 63%;
+}
+.swiper-slide.four .flower-seven{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    top: 44%;
+    width: 27%;
+}
+.swiper-slide.four .flower-eight{
+    width: 14%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+
+
+}
+.swiper-slide.four .flower-nine{
+    position: absolute;
+    left: 0%;
+    top: 21%;
+    width: 10%;
+}
+.swiper-slide.four .flower-ten{
+    position: absolute;
+    top: -2%;
+    left: -4%;
+    width: 12%;
+    transform: rotate(-90deg);
+
+}
+.swiper-slide.four .flower-eleven{
+    position: absolute;
+    top: -1%;
+    width: 33%;
+    right: 20%;
+}
+.swiper-slide.four .flower-twelve{
+    position: absolute;
+    right: -8%;
+    width: 20%;
+    top: 69%;
+    transform: rotate(180deg);
+}
+/*背景结束*/
+.swiper-slide.four .show{
+    width: 70%;
+    height: 5%;
+    position: absolute;
+    top: 14%;
+    left: 15%;
+    font-size: 5vw;
+    color: #4984a2;
+}
+.swiper-slide.four .content{
+    background: #4984a2;
+    border: 4px solid #4984a2;
+    width: 70%;
+    height: 35%;
+    position: absolute;
+    top: 26%;
+    left: 15%;
+}
+.swiper-slide.four .content img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.four .bottom{
+    width: 70%;
+    height: 24%;
+    position: absolute;
+    top: 62%;
+    left: 15%;
+    font-size: 4vw;
+    color: #4984a2;
+}
+.swiper-slide.four .show-line{
+    border: 1px solid #4984a2;
+    position: absolute;
+    top:21%;
+    left: 15%;
+    width: 70%
+}
+
+/*第四屏结束*/
+/*第五屏开始*/
+/*背景开始*/
+.swiper-slide.five{
+    background: url("../img/backgrand.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.five .flower-one{
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.swiper-slide.five .flower-two{
+    width: 26%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.swiper-slide.five .flower-there{
+    width: 12%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+.swiper-slide.five .flower-four{
+    width: 10%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+.swiper-slide.five .flower-five{
+    width: 64%;
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+
+}
+.swiper-slide.five .flower-six{
+    width: 16%;
+    position: absolute;
+    left: -5%;
+    top: 63%;
+}
+.swiper-slide.five .flower-seven{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    top: 44%;
+    width: 27%;
+}
+.swiper-slide.five .flower-eight{
+    width: 14%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+
+
+}
+.swiper-slide.five .flower-nine{
+    position: absolute;
+    left: 0%;
+    top: 21%;
+    width: 10%;
+}
+.swiper-slide.five .flower-ten{
+    position: absolute;
+    top: -2%;
+    left: -4%;
+    width: 12%;
+    transform: rotate(-90deg);
+
+}
+.swiper-slide.five .flower-eleven{
+    position: absolute;
+    top: -1%;
+    width: 33%;
+    right: 20%;
+}
+.swiper-slide.five .flower-twelve{
+    position: absolute;
+    right: -8%;
+    width: 20%;
+    top: 69%;
+    transform: rotate(180deg);
+}
+/*背景结束*/
+.six-top{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 4vw;
+    color: #4984a2;
+}
+.six-line{
+    position: absolute;
+    top: 22%;
+    left: 16%;
+    border: 1px solid #4984a2;
+    width: 70%;
+}
+
+
+/*第五屏结束*/
+
+
+
+/*第六屏开始*/
+/*背景开始*/
+.swiper-slide.six{
+    background: url("../img/backgrand.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.six .flower-one{
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.swiper-slide.six .flower-two{
+    width: 26%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.swiper-slide.six .flower-there{
+    width: 12%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+.swiper-slide.six .flower-four{
+    width: 10%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+.swiper-slide.six .flower-five{
+    width: 64%;
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+
+}
+.swiper-slide.six .flower-six{
+    width: 16%;
+    position: absolute;
+    left: -5%;
+    top: 63%;
+}
+.swiper-slide.six .flower-seven{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -12%;
+    top: 44%;
+    width: 27%;
+}
+.swiper-slide.six .flower-eight{
+    width: 14%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+
+
+}
+.swiper-slide.six .flower-nine{
+    position: absolute;
+    left: 0%;
+    top: 21%;
+    width: 10%;
+}
+.swiper-slide.six .flower-ten{
+    position: absolute;
+    top: -2%;
+    left: -4%;
+    width: 12%;
+    transform: rotate(-90deg);
+
+}
+.swiper-slide.six .flower-eleven{
+    position: absolute;
+    top: -1%;
+    width: 33%;
+    right: 20%;
+}
+.swiper-slide.six .flower-twelve{
+    position: absolute;
+    right: -8%;
+    width: 20%;
+    top: 69%;
+    transform: rotate(180deg);
+}
+/*背景结束*/
+.end{
+    width: 70%;
+    height: 5%;
+    position: absolute;
+    top: 14%;
+    left: 15%;
+    font-size: 5vw;
+    color: #498497;
+}
+.end-line{
+    border: 1px solid #4984a2;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%
+}
+.end-conter{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.end-conter .end-one{
+    width: 70%;
+    position: absolute;
+    top: 9%;
+    left: 15%;
+    height: 10%;
+    font-size: 4vw;
+    border: 2px solid #099c41;
+}
+.end-conter .end-two{
+    width: 70%;
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    height: 10%;
+    border: 2px solid #099c41;
+    font-size: 4vw;
+}
+.end-conter .end-there{
+    width: 70%;
+    position: absolute;
+    top: 46%;
+    left: 15%;
+    height: 10%;
+    border: 2px solid #099c41;
+    font-size: 4vw;
+}
+.end-conter .end-four{
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    border: 2px solid #099c41;
+    font-size: 4vw;
+}
+.end-conter .end-five{
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    top: 84%;
+    left: 15%;
+    border-radius: 5px;
+    background:#14a77b;
+    border: none;
+    color: white;
+    font-size: 4vw;
+
+}
+.end-midden{
+    width: 70%;
+    height: 5%;
+    position: absolute;
+    top: 81%;
+    left: 15%;
+    font-size: 4vw;
+    color: #498497;
+}
+
+
+/*第六屏结束*/
+
